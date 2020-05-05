@@ -1,5 +1,5 @@
 var list = [];
-var buyPricePerGram = 9.37
+var buyPricePerGram = 9.5
 var add = function() {
     var amount = parseFloat($("#paidInput").val())
     var grams = parseFloat($("#gramsInput").val())
