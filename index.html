@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js.js"></script>
+
+        <link href="css.css" rel="stylesheet">
+
+        <title>Mot's Profit Calculator</title>
+    </head>
+    <body>
+        <div style="border:0;margin-top:10vh;margin-left:10vw">
+                Grams:
+                <br>
+                <br>
+                <input style="width:20vw" type="text" class="gramsInput" id="gramsInput" placeholder="grams">
+                <br>
+                <br>
+                <br>
+                Amount Paid:
+                <br>
+                <br>
+                <input style="width:20vw" type="text" class="paidInput" id="paidInput" placeholder="0">
+                <br>
+                <br>
+                <button style="width:20vw"onclick="add();">Add</button>
+        </div>
+        <div id="display" style="border:0;margin-left:10vw">
+            <h4 id="totalGrams">Total Sold:</h4>
+            <h4 id="totalEarnings">Gross Income:</h4>
+            <h4 id="totalProfit">Total Profit:</h4>
+        </div>
+    </body>
+</html>
