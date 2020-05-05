@@ -3,6 +3,12 @@ var buyPricePerGram = 9.37
 var add = function() {
     var amount = parseFloat($("#paidInput").val())
     var grams = parseFloat($("#gramsInput").val())
+    console.log(amount,grams)
+    if (isNaN(amount) || isNaN(grams)) {
+        alert('Please enter a valid amount paid and grams sold');
+        return;
+    }
+
     var profit = amount - (grams * buyPricePerGram)
     let payment = {
         amount: amount,
